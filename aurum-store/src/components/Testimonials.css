@@ -1,0 +1,338 @@
+/* Testimonials Section Styling */
+.testimonials {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  padding: 100px 40px;
+}
+
+.testimonials-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Side */
+.testimonials-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.label-line {
+  width: 40px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #d4af37);
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.section-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Controls */
+.testi-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.testi-nav {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.testi-nav:hover {
+  border-color: #d4af37;
+  background: rgba(212, 175, 55, 0.1);
+  transform: scale(1.05);
+}
+
+.testi-nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+.testi-progress {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  background: #d4af37;
+  transform: scale(1.3);
+}
+
+.progress-dot:hover {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+/* Right Side - Quote */
+.testimonials-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 60px;
+  background: rgba(26, 26, 26, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+}
+
+.quote-mark {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 80px;
+  color: rgba(212, 175, 55, 0.1);
+  line-height: 1;
+  font-weight: 300;
+}
+
+.quote-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ddd;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  font-size: 16px;
+  color: #d4af37;
+}
+
+/* Quote Author */
+.quote-author {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b7355 0%, #6b5b45 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.author-title {
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 0.3px;
+}
+
+/* Marquee */
+.testimonials-marquee {
+  background: #1a1a1a;
+  margin-top: 80px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 40px;
+  animation: marquee 40s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+.marquee-sep {
+  color: #d4af37;
+  margin: 0 12px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 80px 20px;
+  }
+
+  .testimonials-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .testimonials-right {
+    padding: 40px;
+  }
+
+  .quote-text {
+    font-size: 16px;
+  }
+
+  .marquee-track {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .testimonials-left {
+    gap: 30px;
+  }
+
+  .testi-controls {
+    gap: 16px;
+  }
+
+  .testi-nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonials-right {
+    padding: 30px;
+    gap: 24px;
+  }
+
+  .quote-mark {
+    font-size: 60px;
+    top: 10px;
+    left: 20px;
+  }
+
+  .quote-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .marquee-track {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .marquee-item {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 40px 16px;
+  }
+
+  .testimonials-left {
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .testimonials-right {
+    padding: 24px;
+  }
+
+  .quote-text {
+    font-size: 13px;
+  }
+
+  .testi-progress {
+    gap: 8px;
+  }
+
+  .progress-dot {
+    width: 6px;
+    height: 6px;
+  }
+}
