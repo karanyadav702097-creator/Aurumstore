@@ -1,10 +1,8 @@
-// import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero">
-      {/* Background Video/Image */}
       <div className="hero-bg">
         <img 
           src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1920&h=1080&fit=crop" 
@@ -15,7 +13,6 @@ const Hero = () => {
         <div className="hero-overlay"></div>
       </div>
 
-      {/* Main Content */}
       <div className="hero-content">
         <div className="hero-eyebrow">
           <span className="eyebrow-line"></span>
@@ -43,7 +40,6 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Key Stats */}
         <div className="hero-stats">
           <div className="stat">
             <span className="stat-num">0-100 KM/H</span>
@@ -62,7 +58,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating Info Cards */}
       <div className="floating-tag tag-1">
         <span className="tag-label">NEW RELEASE</span>
         <span className="tag-name">AURUM GT-R Hypercar</span>
@@ -75,7 +70,6 @@ const Hero = () => {
         <span className="tag-price">In-House Engineering</span>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="hero-scroll">
         <div className="scroll-line"></div>
         <span className="scroll-text">Scroll to Discover</span>

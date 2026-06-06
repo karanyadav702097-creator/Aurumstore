@@ -1,4 +1,3 @@
-/* Products Section Styling */
 .products-section {
   max-width: 1400px;
   margin: 0 auto;
@@ -50,7 +49,6 @@
   font-weight: 400;
 }
 
-/* Filters */
 .products-filters {
   display: flex;
   gap: 12px;
@@ -113,7 +111,6 @@
   }
 }
 
-/* Product Image */
 .product-image {
   position: relative;
   width: 100%;
@@ -168,7 +165,6 @@
   z-index: 3;
 }
 
-/* Badge */
 .product-badge {
   position: absolute;
   top: 16px;
@@ -208,7 +204,6 @@
   border-color: rgba(150, 80, 200, 0.4);
 }
 
-/* Wishlist Button */
 .wishlist-btn {
   position: absolute;
   top: 16px;
@@ -248,7 +243,6 @@
   height: 20px;
 }
 
-/* Quick Add */
 .product-quick-add {
   position: absolute;
   bottom: 0;
@@ -290,7 +284,6 @@
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
 }
 
-/* Product Info */
 .product-info {
   display: flex;
   flex-direction: column;
@@ -346,7 +339,6 @@
   text-decoration: line-through;
 }
 
-/* CTA Section */
 .products-cta {
   display: flex;
   justify-content: center;
@@ -376,7 +368,6 @@
   box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .products-section {
     padding: 80px 20px;

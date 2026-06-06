@@ -13,7 +13,7 @@ html {
   color: #fff;
 }
 
-/* Luxury Marquee */
+
 .luxury-marquee {
   background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
   color: #d4af37;
@@ -36,7 +36,6 @@ html {
   50% { opacity: 0.7; }
 }
 
-/* Collections Section */
 .collections-section {
   background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
   padding: 100px 40px;
@@ -73,7 +72,7 @@ html {
   line-height: 1.7;
 }
 
-/* Collections Grid */
+
 .collections-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -154,7 +153,6 @@ html {
   transform: translateX(4px);
 }
 
-/* Brand History Section */
 .brand-history {
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
   padding: 100px 40px;
@@ -244,7 +242,7 @@ html {
   transform: scale(1.05);
 }
 
-/* Booking Section */
+
 .booking-section {
   background: linear-gradient(135deg, #d4af37 0%, #c9a227 100%);
   padding: 100px 40px;
@@ -288,7 +286,7 @@ html {
   margin: 0;
 }
 
-/* Booking Form */
+
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -346,7 +344,6 @@ html {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .collections-section {
     padding: 80px 20px;

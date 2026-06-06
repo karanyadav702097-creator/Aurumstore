@@ -4,7 +4,6 @@
   color: #fff;
 }
 
-/* Newsletter */
 .footer-newsletter {
   background: #0d0d0d;
   border-bottom: 1px solid #333;
@@ -47,7 +46,6 @@
   margin: 0;
 }
 
-/* Newsletter Form */
 .newsletter-form {
   display: flex;
   gap: 12px;
@@ -94,7 +92,6 @@
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
 }
 
-/* Main Footer */
 .footer-main {
   padding: 80px 40px;
   display: grid;
@@ -102,7 +99,6 @@
   gap: 80px;
 }
 
-/* Brand Section */
 .footer-brand {
   display: flex;
   flex-direction: column;
@@ -134,7 +130,6 @@
   max-width: 300px;
 }
 
-/* Social Links */
 .footer-socials {
   display: flex;
   gap: 24px;
@@ -155,7 +150,6 @@
   color: #d4af37;
 }
 
-/* Navigation */
 .footer-nav {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -197,7 +191,6 @@
   color: #d4af37;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   border-top: 1px solid #333;
   padding: 40px;
@@ -242,7 +235,6 @@
   letter-spacing: 0.7px;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .footer-newsletter {
     padding: 40px 20px;

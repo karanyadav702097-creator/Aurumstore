@@ -10,18 +10,18 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* Luxury Brand Marquee */}
+      
       <div className="luxury-marquee">
-        <p>🏁 AURUM MOTORS: Engineering Excellence Since 1987 | Where Performance Meets Prestige | Limited Availability</p>
+        <p> AURUM MOTORS: Engineering Excellence Since 1987 | Where Performance Meets Prestige | Limited Availability</p>
       </div>
 
-      {/* Glassmorphism Navigation */}
+      
       <Navbar />
 
-      {/* Luxury Car Hero Showcase */}
+     
       <Hero />
 
-      {/* Car Collections */}
+     
       <section className="collections-section">
         <div className="collections-header">
           <p className="collections-subtitle">Collections</p>
@@ -67,15 +67,13 @@ function App() {
         </div>
       </section>
 
-      {/* Car Types/Models Showcase */}
+      
       <Categories />
 
-      {/* Featured Supercars */}
       <div id="models">
         <ProductCards />
       </div>
 
-      {/* Brand History */}
       <section className="brand-history">
         <div className="history-content">
           <div className="history-text">
@@ -111,10 +109,8 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials */}
       <Testimonials />
 
-      {/* Test Drive Booking */}
       <section className="booking-section">
         <div className="booking-content">
           <div className="booking-header">
@@ -148,7 +144,7 @@ function App() {
         </div>
       </section>
 
-      {/* Premium Footer */}
+      
       <Footer />
     </div>
   );
