@@ -1,11 +1,30 @@
+import { useState, useEffect } from 'react';
 import './Hero.css';
 
+const heroImages = [
+  'car.jpg',
+  'car1.jpg ',
+   'car2.jpg',
+  'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1920&h=1080&fit=crop'
+];
+
 const Hero = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero-bg">
         <img 
-          src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1920&h=1080&fit=crop" 
+          key={currentImage}
+          src={heroImages[currentImage]} 
           alt="Luxury Car"
           className="hero-bg-image"
         />
